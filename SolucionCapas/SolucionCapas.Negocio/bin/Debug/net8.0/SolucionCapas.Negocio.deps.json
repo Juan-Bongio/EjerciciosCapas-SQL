@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SolucionCapas.Negocio/1.0.0": {
+        "dependencies": {
+          "SolucionCapas.Datos": "1.0.0"
+        },
+        "runtime": {
+          "SolucionCapas.Negocio.dll": {}
+        }
+      },
+      "SolucionCapas.Datos/1.0.0": {
+        "runtime": {
+          "SolucionCapas.Datos.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SolucionCapas.Negocio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SolucionCapas.Datos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

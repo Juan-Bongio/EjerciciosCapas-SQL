@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\poo26\\ejemploCapas\\SolucionCapas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A06A59BE-3B5A-4EF2-9607-626FDAC48F57}|SolucionCapas.Presentacion\\SolucionCapas.Presentacion.csproj|d:\\poo26\\ejemplocapas\\solucioncapas\\solucioncapas.presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A06A59BE-3B5A-4EF2-9607-626FDAC48F57}|SolucionCapas.Presentacion\\SolucionCapas.Presentacion.csproj|solutionrelative:solucioncapas.presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCCFBBE-50AD-4836-A77D-71E7EBAD897D}|SolucionCapas.Negocio\\SolucionCapas.Negocio.csproj|d:\\poo26\\ejemplocapas\\solucioncapas\\solucioncapas.negocio\\negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCCCFBBE-50AD-4836-A77D-71E7EBAD897D}|SolucionCapas.Negocio\\SolucionCapas.Negocio.csproj|solutionrelative:solucioncapas.negocio\\negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22790BB3-4D06-4B2D-BE35-EAFED2D4BD25}|SolucionCapas.Datos\\SolucionCapas.Datos.csproj|d:\\poo26\\ejemplocapas\\solucioncapas\\solucioncapas.datos\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22790BB3-4D06-4B2D-BE35-EAFED2D4BD25}|SolucionCapas.Datos\\SolucionCapas.Datos.csproj|solutionrelative:solucioncapas.datos\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A06A59BE-3B5A-4EF2-9607-626FDAC48F57}|SolucionCapas.Presentacion\\SolucionCapas.Presentacion.csproj|d:\\poo26\\ejemplocapas\\solucioncapas\\solucioncapas.presentacion\\solucioncapas.presentacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A06A59BE-3B5A-4EF2-9607-626FDAC48F57}|SolucionCapas.Presentacion\\SolucionCapas.Presentacion.csproj|solutionrelative:solucioncapas.presentacion\\solucioncapas.presentacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCCFBBE-50AD-4836-A77D-71E7EBAD897D}|SolucionCapas.Negocio\\SolucionCapas.Negocio.csproj|d:\\poo26\\ejemplocapas\\solucioncapas\\solucioncapas.negocio\\solucioncapas.negocio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FCCCFBBE-50AD-4836-A77D-71E7EBAD897D}|SolucionCapas.Negocio\\SolucionCapas.Negocio.csproj|solutionrelative:solucioncapas.negocio\\solucioncapas.negocio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SolucionCapas.Presentacion",
+              "DocumentMoniker": "D:\\poo26\\ejemploCapas\\SolucionCapas\\SolucionCapas.Presentacion\\SolucionCapas.Presentacion.csproj",
+              "RelativeDocumentMoniker": "SolucionCapas.Presentacion\\SolucionCapas.Presentacion.csproj",
+              "ToolTip": "D:\\poo26\\ejemploCapas\\SolucionCapas\\SolucionCapas.Presentacion\\SolucionCapas.Presentacion.csproj",
+              "RelativeToolTip": "SolucionCapas.Presentacion\\SolucionCapas.Presentacion.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-13T22:24:30.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SolucionCapas.Negocio",
+              "DocumentMoniker": "D:\\poo26\\ejemploCapas\\SolucionCapas\\SolucionCapas.Negocio\\SolucionCapas.Negocio.csproj",
+              "RelativeDocumentMoniker": "SolucionCapas.Negocio\\SolucionCapas.Negocio.csproj",
+              "ToolTip": "D:\\poo26\\ejemploCapas\\SolucionCapas\\SolucionCapas.Negocio\\SolucionCapas.Negocio.csproj",
+              "RelativeToolTip": "SolucionCapas.Negocio\\SolucionCapas.Negocio.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-13T22:12:59.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Datos.cs",
+              "DocumentMoniker": "D:\\poo26\\ejemploCapas\\SolucionCapas\\SolucionCapas.Datos\\Datos.cs",
+              "RelativeDocumentMoniker": "SolucionCapas.Datos\\Datos.cs",
+              "ToolTip": "D:\\poo26\\ejemploCapas\\SolucionCapas\\SolucionCapas.Datos\\Datos.cs",
+              "RelativeToolTip": "SolucionCapas.Datos\\Datos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T22:11:26.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Negocio.cs",
+              "DocumentMoniker": "D:\\poo26\\ejemploCapas\\SolucionCapas\\SolucionCapas.Negocio\\Negocio.cs",
+              "RelativeDocumentMoniker": "SolucionCapas.Negocio\\Negocio.cs",
+              "ToolTip": "D:\\poo26\\ejemploCapas\\SolucionCapas\\SolucionCapas.Negocio\\Negocio.cs",
+              "RelativeToolTip": "SolucionCapas.Negocio\\Negocio.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T22:11:03.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\poo26\\ejemploCapas\\SolucionCapas\\SolucionCapas.Presentacion\\Program.cs",
+              "RelativeDocumentMoniker": "SolucionCapas.Presentacion\\Program.cs",
+              "ToolTip": "D:\\poo26\\ejemploCapas\\SolucionCapas\\SolucionCapas.Presentacion\\Program.cs",
+              "RelativeToolTip": "SolucionCapas.Presentacion\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T22:10:36.014Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
