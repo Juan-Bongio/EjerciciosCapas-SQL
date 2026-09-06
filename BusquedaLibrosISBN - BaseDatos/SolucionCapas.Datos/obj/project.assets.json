@@ -593,19 +593,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC-1\\.nuget\\packages\\": {}
+    "C:\\Users\\usuario\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC-1\\Downloads\\BusquedaLibrosISBN\\SolucionCapas.Datos\\SolucionCapas.Datos.csproj",
+      "projectUniqueName": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\BusquedaLibrosISBN - BaseDatos\\SolucionCapas.Datos\\SolucionCapas.Datos.csproj",
       "projectName": "SolucionCapas.Datos",
-      "projectPath": "C:\\Users\\PC-1\\Downloads\\BusquedaLibrosISBN\\SolucionCapas.Datos\\SolucionCapas.Datos.csproj",
-      "packagesPath": "C:\\Users\\PC-1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC-1\\Downloads\\BusquedaLibrosISBN\\SolucionCapas.Datos\\obj\\",
+      "projectPath": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\BusquedaLibrosISBN - BaseDatos\\SolucionCapas.Datos\\SolucionCapas.Datos.csproj",
+      "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\BusquedaLibrosISBN - BaseDatos\\SolucionCapas.Datos\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\PC-1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -631,7 +636,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -658,7 +664,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

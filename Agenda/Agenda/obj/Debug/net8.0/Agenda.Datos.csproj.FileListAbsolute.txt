@@ -1,0 +1,13 @@
+C:\Users\usuario\OneDrive\Desktop\Base de Datos - Obregon\Agenda\Agenda\obj\Debug\net8.0\Agenda.Datos.csproj.AssemblyReference.cache
+C:\Users\usuario\OneDrive\Desktop\Base de Datos - Obregon\Agenda\Agenda\obj\Debug\net8.0\Agenda.Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\OneDrive\Desktop\Base de Datos - Obregon\Agenda\Agenda\obj\Debug\net8.0\Agenda.Datos.AssemblyInfoInputs.cache
+C:\Users\usuario\OneDrive\Desktop\Base de Datos - Obregon\Agenda\Agenda\obj\Debug\net8.0\Agenda.Datos.AssemblyInfo.cs
+C:\Users\usuario\OneDrive\Desktop\Base de Datos - Obregon\Agenda\Agenda\obj\Debug\net8.0\Agenda.Datos.csproj.CoreCompileInputs.cache
+C:\Users\usuario\OneDrive\Desktop\Base de Datos - Obregon\Agenda\Agenda\obj\Debug\net8.0\Agenda.Datos.sourcelink.json
+C:\Users\usuario\OneDrive\Desktop\Base de Datos - Obregon\Agenda\Agenda\bin\Debug\net8.0\Agenda.Datos.deps.json
+C:\Users\usuario\OneDrive\Desktop\Base de Datos - Obregon\Agenda\Agenda\bin\Debug\net8.0\Agenda.Datos.dll
+C:\Users\usuario\OneDrive\Desktop\Base de Datos - Obregon\Agenda\Agenda\bin\Debug\net8.0\Agenda.Datos.pdb
+C:\Users\usuario\OneDrive\Desktop\Base de Datos - Obregon\Agenda\Agenda\obj\Debug\net8.0\Agenda.Datos.dll
+C:\Users\usuario\OneDrive\Desktop\Base de Datos - Obregon\Agenda\Agenda\obj\Debug\net8.0\refint\Agenda.Datos.dll
+C:\Users\usuario\OneDrive\Desktop\Base de Datos - Obregon\Agenda\Agenda\obj\Debug\net8.0\Agenda.Datos.pdb
+C:\Users\usuario\OneDrive\Desktop\Base de Datos - Obregon\Agenda\Agenda\obj\Debug\net8.0\ref\Agenda.Datos.dll
