@@ -599,11 +599,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda\\Agenda.Datos.csproj",
+      "projectUniqueName": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Datos\\Agenda.Datos.csproj",
       "projectName": "Agenda.Datos",
-      "projectPath": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda\\Agenda.Datos.csproj",
+      "projectPath": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Datos\\Agenda.Datos.csproj",
       "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda\\obj\\",
+      "outputPath": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Datos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

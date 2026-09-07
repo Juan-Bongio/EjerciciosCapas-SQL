@@ -615,8 +615,8 @@
     },
     "Agenda.Datos/1.0.0": {
       "type": "project",
-      "path": "../Agenda/Agenda.Datos.csproj",
-      "msbuildProject": "../Agenda/Agenda.Datos.csproj"
+      "path": "../Agenda.Datos/Agenda.Datos.csproj",
+      "msbuildProject": "../Agenda.Datos/Agenda.Datos.csproj"
     },
     "Agenda.Negocio/1.0.0": {
       "type": "project",

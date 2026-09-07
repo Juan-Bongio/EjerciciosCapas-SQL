@@ -601,8 +601,8 @@
     },
     "Agenda.Datos/1.0.0": {
       "type": "project",
-      "path": "../Agenda/Agenda.Datos.csproj",
-      "msbuildProject": "../Agenda/Agenda.Datos.csproj"
+      "path": "../Agenda.Datos/Agenda.Datos.csproj",
+      "msbuildProject": "../Agenda.Datos/Agenda.Datos.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -644,8 +644,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda\\Agenda.Datos.csproj": {
-              "projectPath": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda\\Agenda.Datos.csproj"
+            "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Datos\\Agenda.Datos.csproj": {
+              "projectPath": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Datos\\Agenda.Datos.csproj"
             }
           }
         }

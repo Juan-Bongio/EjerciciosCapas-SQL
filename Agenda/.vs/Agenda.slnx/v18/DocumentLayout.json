@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4887F4A2-B9E1-8D4E-6CF4-6EC01472237F}|Agenda.Datos\\Agenda.Datos.csproj|c:\\users\\usuario\\onedrive\\desktop\\base de datos - obregon\\agenda\\agenda.datos\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4887F4A2-B9E1-8D4E-6CF4-6EC01472237F}|Agenda.Datos\\Agenda.Datos.csproj|solutionrelative:agenda.datos\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{753B7202-5767-C6FD-18A5-8E90A0E2B358}|Agenda.Presentacion\\Agenda.Presentacion.csproj|c:\\users\\usuario\\onedrive\\desktop\\base de datos - obregon\\agenda\\agenda.presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{753B7202-5767-C6FD-18A5-8E90A0E2B358}|Agenda.Presentacion\\Agenda.Presentacion.csproj|solutionrelative:agenda.presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FFEDA111-2116-46A0-5732-C458FCC1C534}|Agenda.Negocio\\Agenda.Negocio.csproj|c:\\users\\usuario\\onedrive\\desktop\\base de datos - obregon\\agenda\\agenda.negocio\\negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFEDA111-2116-46A0-5732-C458FCC1C534}|Agenda.Negocio\\Agenda.Negocio.csproj|solutionrelative:agenda.negocio\\negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98D34CE4-043A-E75E-30AD-AEC422953075}|Agenda\\Agenda.Datos.csproj|c:\\users\\usuario\\onedrive\\desktop\\base de datos - obregon\\agenda\\agenda\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98D34CE4-043A-E75E-30AD-AEC422953075}|Agenda\\Agenda.Datos.csproj|solutionrelative:agenda\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Presentacion\\Program.cs",
               "RelativeDocumentMoniker": "Agenda.Presentacion\\Program.cs",
               "ToolTip": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Presentacion\\Program.cs",
               "RelativeToolTip": "Agenda.Presentacion\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAywBIAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T00:07:00.874Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Negocio.cs",
-              "DocumentMoniker": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Negocio\\Negocio.cs",
-              "RelativeDocumentMoniker": "Agenda.Negocio\\Negocio.cs",
-              "ToolTip": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Negocio\\Negocio.cs",
-              "RelativeToolTip": "Agenda.Negocio\\Negocio.cs",
-              "ViewState": "AgIAANwAAAAAAAAAAAAcwAwBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-06T23:24:13.475Z",
+              "WhenOpened": "2026-09-07T00:31:07.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Datos.cs",
-              "DocumentMoniker": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda\\Datos.cs",
-              "RelativeDocumentMoniker": "Agenda\\Datos.cs",
-              "ToolTip": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda\\Datos.cs",
-              "RelativeToolTip": "Agenda\\Datos.cs",
-              "ViewState": "AgIAADMBAACgUyRfCaowwB8AAAAVAAAAAAAAAA==",
+              "Title": "Negocio.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Negocio\\Negocio.cs",
+              "RelativeDocumentMoniker": "Agenda.Negocio\\Negocio.cs",
+              "ToolTip": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Negocio\\Negocio.cs",
+              "RelativeToolTip": "Agenda.Negocio\\Negocio.cs",
+              "ViewState": "AgIAAPUAAAAAAAAAAAAUwAwBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-06T23:22:45.195Z",
+              "WhenOpened": "2026-09-07T00:22:32.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Datos.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Datos\\Datos.cs",
+              "RelativeDocumentMoniker": "Agenda.Datos\\Datos.cs",
+              "ToolTip": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Datos\\Datos.cs",
+              "RelativeToolTip": "Agenda.Datos\\Datos.cs",
+              "ViewState": "AgIAADABAAAAHpWbqNklwDwBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T00:22:20.242Z",
               "EditorCaption": ""
             }
           ]
