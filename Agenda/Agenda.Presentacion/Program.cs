@@ -29,50 +29,13 @@ public class Program
 
             switch (op)
             {
+                // AGREGAR
                 case 1:
                     Console.Clear();
 
                     Console.WriteLine("===== AGREGAR PERSONA =====");
 
-                    Console.Write("DNI: ");
-                    int dni = Convert.ToInt32(Console.ReadLine());
-
-                    Console.Write("Apellido: ");
-                    string apellido = Console.ReadLine();
-
-                    Console.Write("Nombres: ");
-                    string nombres = Console.ReadLine();
-
-                    Console.Write("Calle: ");
-                    string calle = Console.ReadLine();
-
-                    Console.Write("Depto: ");
-                    string depto = Console.ReadLine();
-
-                    Console.Write("Piso: ");
-                    string piso = Console.ReadLine();
-
-                    Console.Write("Ciudad: ");
-                    string ciudad = Console.ReadLine();
-
-                    Console.Write("Telefono: ");
-                    int telefono = Convert.ToInt32(Console.ReadLine());
-
-                    Console.Write("Email: ");
-                    string email = Console.ReadLine();
-
-                    Persona personaAgregar = new Persona
-                    {
-                        DNI = dni,
-                        Apellido = apellido,
-                        Nombres = nombres,
-                        Calle = calle,
-                        Depto = depto,
-                        Piso = piso,
-                        Ciudad = ciudad,
-                        Telefono = telefono,
-                        Email = email
-                    };
+                    Persona personaAgregar = CargarPersona();
 
                     bool resultado = negocio.AgregarPersona(personaAgregar);
 
@@ -90,6 +53,7 @@ public class Program
                     break;
 
 
+                // BUSCAR
                 case 2:
                     Console.Clear();
 
@@ -106,24 +70,19 @@ public class Program
                     if (tipoBusqueda == 1)
                     {
                         Console.Write("Ingrese DNI: ");
-                        dni = Convert.ToInt32(Console.ReadLine());
+                        int dni = Convert.ToInt32(Console.ReadLine());
 
                         Persona persona = negocio.ObtenerPorDni(dni);
 
                         if (persona != null)
-                        {
                             MostrarPersona(persona);
-                        }
                         else
-                        {
-                            Console.WriteLine();
                             Console.WriteLine("No existe una persona con ese DNI.");
-                        }
                     }
                     else if (tipoBusqueda == 2)
                     {
                         Console.Write("Ingrese Apellido: ");
-                        apellido = Console.ReadLine();
+                        string apellido = Console.ReadLine();
 
                         List<Persona> personas = negocio.BuscarPorApellido(apellido);
 
@@ -132,7 +91,7 @@ public class Program
                     else if (tipoBusqueda == 3)
                     {
                         Console.Write("Ingrese Nombres: ");
-                        nombres = Console.ReadLine();
+                        string nombres = Console.ReadLine();
 
                         List<Persona> personas = negocio.BuscarPorNombres(nombres);
 
@@ -141,7 +100,7 @@ public class Program
                     else if (tipoBusqueda == 4)
                     {
                         Console.Write("Ingrese Calle: ");
-                        calle = Console.ReadLine();
+                        string calle = Console.ReadLine();
 
                         List<Persona> personas = negocio.BuscarPorCalle(calle);
 
@@ -159,15 +118,16 @@ public class Program
                     break;
 
 
+                // MODIFICAR
                 case 3:
                     Console.Clear();
 
                     Console.WriteLine("===== MODIFICAR PERSONA =====");
 
                     Console.Write("Ingrese DNI: ");
-                    dni = Convert.ToInt32(Console.ReadLine());
+                    int dniModificar = Convert.ToInt32(Console.ReadLine());
 
-                    Persona personaModificar = negocio.ObtenerPorDni(dni);
+                    Persona personaModificar = negocio.ObtenerPorDni(dniModificar);
 
                     if (personaModificar != null)
                     {
@@ -178,42 +138,9 @@ public class Program
                         Console.WriteLine();
                         Console.WriteLine("Ingrese los nuevos datos:");
 
-                        Console.Write("Nuevo Apellido: ");
-                        apellido = Console.ReadLine();
+                        Persona personaModificada = CargarPersona();
 
-                        Console.Write("Nuevos Nombres: ");
-                        nombres = Console.ReadLine();
-
-                        Console.Write("Nueva Calle: ");
-                        calle = Console.ReadLine();
-
-                        Console.Write("Nuevo Depto: ");
-                        depto = Console.ReadLine();
-
-                        Console.Write("Nuevo Piso: ");
-                        piso = Console.ReadLine();
-
-                        Console.Write("Nueva Ciudad: ");
-                        ciudad = Console.ReadLine();
-
-                        Console.Write("Nuevo Telefono: ");
-                        telefono = Convert.ToInt32(Console.ReadLine());
-
-                        Console.Write("Nuevo Email: ");
-                        email = Console.ReadLine();
-
-                        Persona personaModificada = new Persona
-                        {
-                            DNI = dni,
-                            Apellido = apellido,
-                            Nombres = nombres,
-                            Calle = calle,
-                            Depto = depto,
-                            Piso = piso,
-                            Ciudad = ciudad,
-                            Telefono = telefono,
-                            Email = email
-                        };
+                        personaModificada.DNI = dniModificar;
 
                         resultado = negocio.ModificarPersona(personaModificada);
 
@@ -226,7 +153,6 @@ public class Program
                     }
                     else
                     {
-                        Console.WriteLine();
                         Console.WriteLine("No existe una persona con ese DNI.");
                     }
 
@@ -237,15 +163,16 @@ public class Program
                     break;
 
 
+                // ELIMINAR
                 case 4:
                     Console.Clear();
 
                     Console.WriteLine("===== ELIMINAR PERSONA =====");
 
                     Console.Write("Ingrese DNI de la persona a eliminar: ");
-                    dni = Convert.ToInt32(Console.ReadLine());
+                    int dniEliminar = Convert.ToInt32(Console.ReadLine());
 
-                    bool eliminado = negocio.EliminarPersona(dni);
+                    bool eliminado = negocio.EliminarPersona(dniEliminar);
 
                     Console.WriteLine();
 
@@ -261,6 +188,7 @@ public class Program
                     break;
 
 
+                // SALIR
                 case 5:
                     Console.Clear();
                     Console.WriteLine("Saliendo del sistema...");
@@ -276,11 +204,95 @@ public class Program
         } while (op != 5);
     }
 
+
+    // CARGAR PERSONA
+    public static Persona CargarPersona()
+    {
+        Persona persona = new Persona();
+
+        Console.Write("DNI: ");
+        persona.DNI = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("CUIL/CUIT: ");
+        persona.CuilCuit = Convert.ToInt64(Console.ReadLine());
+
+        Console.Write("Apellido: ");
+        persona.Apellido = Console.ReadLine();
+
+        Console.Write("Nombres: ");
+        persona.Nombres = Console.ReadLine();
+
+        Console.Write("Calle: ");
+        persona.Calle = Console.ReadLine();
+
+        Console.Write("Depto: ");
+        persona.Depto = Console.ReadLine();
+
+        Console.Write("Piso: ");
+        persona.Piso = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Ciudad: ");
+        persona.Ciudad = Console.ReadLine();
+
+        Console.Write("Telefono: ");
+        persona.Telefono = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Email: ");
+        persona.Email = Console.ReadLine();
+
+        Console.Write("Fecha de Alta (dd/MM/yyyy): ");
+        persona.FechaAlta = Convert.ToDateTime(Console.ReadLine());
+
+        Console.Write("Estado Civil: ");
+        persona.EstadoCivil = Console.ReadLine();
+
+        Console.Write("Nacionalidad: ");
+        persona.Nacionalidad = Console.ReadLine();
+
+        Console.Write("Provincia: ");
+        persona.Provincia = Console.ReadLine();
+
+        Console.Write("Codigo Postal: ");
+        persona.CodigoPostal = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Barrio: ");
+        persona.Barrio = Console.ReadLine();
+
+        Console.Write("Telefono Alternativo: ");
+        persona.TelefonoAlternativo = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Instagram: ");
+        persona.Instagram = Console.ReadLine();
+
+        Console.Write("Profesion/Ocupacion: ");
+        persona.ProfesionOcupacion = Console.ReadLine();
+
+        Console.Write("Empresa/Lugar de Trabajo: ");
+        persona.EmpresaLugarTrabajo = Console.ReadLine();
+
+        Console.Write("Nivel de Estudios: ");
+        persona.NivelEstudios = Console.ReadLine();
+
+        Console.Write("Estado (ACTIVO/INACTIVO): ");
+        persona.Estado = Console.ReadLine();
+
+        Console.Write("Metodo de Pago Preferido: ");
+        persona.MetodoPagoPreferido = Console.ReadLine();
+
+        Console.Write("Observaciones/Notas: ");
+        persona.Observaciones = Console.ReadLine();
+
+        return persona;
+    }
+
+
+    // MOSTRAR UNA PERSONA
     public static void MostrarPersona(Persona persona)
     {
         Console.WriteLine();
-        Console.WriteLine("-------------------------------");
+        Console.WriteLine("--------------------------------------");
         Console.WriteLine($"DNI: {persona.DNI}");
+        Console.WriteLine($"CUIL/CUIT: {persona.CuilCuit}");
         Console.WriteLine($"Apellido: {persona.Apellido}");
         Console.WriteLine($"Nombres: {persona.Nombres}");
         Console.WriteLine($"Calle: {persona.Calle}");
@@ -289,9 +301,25 @@ public class Program
         Console.WriteLine($"Ciudad: {persona.Ciudad}");
         Console.WriteLine($"Telefono: {persona.Telefono}");
         Console.WriteLine($"Email: {persona.Email}");
-        Console.WriteLine("-------------------------------");
+        Console.WriteLine($"Fecha de Alta: {persona.FechaAlta:dd/MM/yyyy}");
+        Console.WriteLine($"Estado Civil: {persona.EstadoCivil}");
+        Console.WriteLine($"Nacionalidad: {persona.Nacionalidad}");
+        Console.WriteLine($"Provincia: {persona.Provincia}");
+        Console.WriteLine($"Codigo Postal: {persona.CodigoPostal}");
+        Console.WriteLine($"Barrio: {persona.Barrio}");
+        Console.WriteLine($"Telefono Alternativo: {persona.TelefonoAlternativo}");
+        Console.WriteLine($"Instagram: {persona.Instagram}");
+        Console.WriteLine($"Profesion/Ocupacion: {persona.ProfesionOcupacion}");
+        Console.WriteLine($"Empresa/Lugar de Trabajo: {persona.EmpresaLugarTrabajo}");
+        Console.WriteLine($"Nivel de Estudios: {persona.NivelEstudios}");
+        Console.WriteLine($"Estado: {persona.Estado}");
+        Console.WriteLine($"Metodo de Pago Preferido: {persona.MetodoPagoPreferido}");
+        Console.WriteLine($"Observaciones/Notas: {persona.Observaciones}");
+        Console.WriteLine("--------------------------------------");
     }
 
+
+    // MOSTRAR VARIAS PERSONAS
     public static void MostrarPersonas(List<Persona> personas)
     {
         Console.WriteLine();
