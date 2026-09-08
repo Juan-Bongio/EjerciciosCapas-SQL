@@ -6,20 +6,45 @@ namespace Agenda.Datos
 {
     public class AgendaDatos
     {
+        public class PersonaDatos
+        {
+            public int DNI { get; set; }
+            public long CuilCuit { get; set; }
+            public string Apellido { get; set; }
+            public string Nombres { get; set; }
+            public string Calle { get; set; }
+            public string Depto { get; set; }
+            public int Piso { get; set; }
+            public string Ciudad { get; set; }
+            public int Telefono { get; set; }
+            public string Email { get; set; }
+            public DateTime FechaAlta { get; set; }
+            public string EstadoCivil { get; set; }
+            public string Nacionalidad { get; set; }
+            public string Provincia { get; set; }
+            public int CodigoPostal { get; set; }
+            public string Barrio { get; set; }
+            public int TelefonoAlternativo { get; set; }
+            public string Instagram { get; set; }
+            public string ProfesionOcupacion { get; set; }
+            public string EmpresaLugarTrabajo { get; set; }
+            public string NivelEstudios { get; set; }
+            public string Estado { get; set; }
+            public string MetodoPagoPreferido { get; set; }
+            public string Observaciones { get; set; }
+        }
+
         private string _conexionString = "Server=localhost;Port=3306;Database=agenda;Uid=root;Pwd=;";
 
         // BUSCAR POR DNI
-        public (int DNI, long CuilCuit, string Apellido, string Nombres, string Calle, string Depto, int Piso,
-            string Ciudad, int Telefono, string Email, DateTime FechaAlta, string EstadoCivil,
-            string Nacionalidad, string Provincia, int CodigoPostal, string Barrio, int TelefonoAlternativo,
-            string Instagram, string ProfesionOcupacion, string EmpresaLugarTrabajo, string NivelEstudios,
-            string Estado, string MetodoPagoPreferido, string Observaciones)? BuscarPorDni(int dni)
+        public PersonaDatos BuscarPorDni(int dni)
         {
             string query = "SELECT * FROM agenda WHERE DNI = @DNI";
 
             using (MySqlConnection conexion = new MySqlConnection(_conexionString))
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
+
                 comando.Parameters.AddWithValue("@DNI", dni);
 
                 conexion.Open();
@@ -37,22 +62,16 @@ namespace Agenda.Datos
         }
 
         // BUSCAR POR APELLIDO
-        public List<(int DNI, long CuilCuit, string Apellido, string Nombres, string Calle, string Depto, int Piso,
-            string Ciudad, int Telefono, string Email, DateTime FechaAlta, string EstadoCivil,
-            string Nacionalidad, string Provincia, int CodigoPostal, string Barrio, int TelefonoAlternativo,
-            string Instagram, string ProfesionOcupacion, string EmpresaLugarTrabajo, string NivelEstudios,
-            string Estado, string MetodoPagoPreferido, string Observaciones)> BuscarPorApellido(string apellido)
+        public List<PersonaDatos> BuscarPorApellido(string apellido)
         {
-            List<(int, long, string, string, string, string, int, string, int, string, DateTime, string,
-                string, string, int, string, int, string, string, string, string, string, string, string)> lista =
-                new List<(int, long, string, string, string, string, int, string, int, string, DateTime, string,
-                string, string, int, string, int, string, string, string, string, string, string, string)>();
+            List<PersonaDatos> lista = new List<PersonaDatos>();
 
             string query = "SELECT * FROM agenda WHERE Apellido LIKE @Apellido";
 
             using (MySqlConnection conexion = new MySqlConnection(_conexionString))
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
+
                 comando.Parameters.AddWithValue("@Apellido", "%" + apellido + "%");
 
                 conexion.Open();
@@ -70,22 +89,16 @@ namespace Agenda.Datos
         }
 
         // BUSCAR POR NOMBRES
-        public List<(int DNI, long CuilCuit, string Apellido, string Nombres, string Calle, string Depto, int Piso,
-            string Ciudad, int Telefono, string Email, DateTime FechaAlta, string EstadoCivil,
-            string Nacionalidad, string Provincia, int CodigoPostal, string Barrio, int TelefonoAlternativo,
-            string Instagram, string ProfesionOcupacion, string EmpresaLugarTrabajo, string NivelEstudios,
-            string Estado, string MetodoPagoPreferido, string Observaciones)> BuscarPorNombres(string nombres)
+        public List<PersonaDatos> BuscarPorNombres(string nombres)
         {
-            List<(int, long, string, string, string, string, int, string, int, string, DateTime, string,
-            string, string, int, string, int, string, string, string, string, string, string, string)> lista =
-            new List<(int, long, string, string, string, string, int, string, int, string, DateTime, string,
-            string, string, int, string, int, string, string, string, string, string, string, string)>();
+            List<PersonaDatos> lista = new List<PersonaDatos>();
 
             string query = "SELECT * FROM agenda WHERE Nombres LIKE @Nombres";
 
             using (MySqlConnection conexion = new MySqlConnection(_conexionString))
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
+
                 comando.Parameters.AddWithValue("@Nombres", "%" + nombres + "%");
 
                 conexion.Open();
@@ -103,22 +116,16 @@ namespace Agenda.Datos
         }
 
         // BUSCAR POR CALLE
-        public List<(int DNI, long CuilCuit, string Apellido, string Nombres, string Calle, string Depto, int Piso,
-            string Ciudad, int Telefono, string Email, DateTime FechaAlta, string EstadoCivil,
-            string Nacionalidad, string Provincia, int CodigoPostal, string Barrio, int TelefonoAlternativo,
-            string Instagram, string ProfesionOcupacion, string EmpresaLugarTrabajo, string NivelEstudios,
-            string Estado, string MetodoPagoPreferido, string Observaciones)> BuscarPorCalle(string calle)
+        public List<PersonaDatos> BuscarPorCalle(string calle)
         {
-            List<(int, long, string, string, string, string, int, string, int, string, DateTime, string,
-                string, string, int, string, int, string, string, string, string, string, string, string)> lista =
-                new List<(int, long, string, string, string, string, int, string, int, string, DateTime, string,
-                string, string, int, string, int, string, string, string, string, string, string, string)>();
+            List<PersonaDatos> lista = new List<PersonaDatos>();
 
             string query = "SELECT * FROM agenda WHERE Calle LIKE @Calle";
 
             using (MySqlConnection conexion = new MySqlConnection(_conexionString))
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
+
                 comando.Parameters.AddWithValue("@Calle", "%" + calle + "%");
 
                 conexion.Open();
@@ -136,73 +143,45 @@ namespace Agenda.Datos
         }
 
         // AGREGAR
-        public bool Agregar(
-            int dni,
-            long cuilCuit,
-            string apellido,
-            string nombres,
-            string calle,
-            string depto,
-            int piso,
-            string ciudad,
-            int telefono,
-            string email,
-            DateTime fechaAlta,
-            string estadoCivil,
-            string nacionalidad,
-            string provincia,
-            int codigoPostal,
-            string barrio,
-            int telefonoAlternativo,
-            string instagram,
-            string profesionOcupacion,
-            string empresaLugarTrabajo,
-            string nivelEstudios,
-            string estado,
-            string metodoPagoPreferido,
-            string observaciones)
+        public bool Agregar(PersonaDatos persona)
         {
             string query = @"INSERT INTO agenda
-                (DNI, CUIL_CUIT, Apellido, Nombres, Calle, Depto, Piso, Ciudad,
-                 Telefono, Email, FechaAlta, EstadoCivil, Nacionalidad, Provincia,
-                 CodigoPostal, Barrio, TelefonoAlternativo, Instagram,
-                 ProfesionOcupacion, EmpresaLugarTrabajo, NivelEstudios,
-                 Estado, MetodoPagoPreferido, Observaciones)
+                (DNI, CUIL_CUIT, Apellido, Nombres, Calle, Depto, Piso, Ciudad, Telefono, Email, FechaAlta, EstadoCivil,
+                Nacionalidad, Provincia, CodigoPostal, Barrio, TelefonoAlternativo, Instagram, ProfesionOcupacion,
+                EmpresaLugarTrabajo, NivelEstudios, Estado, MetodoPagoPreferido, Observaciones)
                 VALUES
-                (@DNI, @CUIL_CUIT, @Apellido, @Nombres, @Calle, @Depto, @Piso, @Ciudad,
-                 @Telefono, @Email, @FechaAlta, @EstadoCivil, @Nacionalidad, @Provincia,
-                 @CodigoPostal, @Barrio, @TelefonoAlternativo, @Instagram,
-                 @ProfesionOcupacion, @EmpresaLugarTrabajo, @NivelEstudios,
-                 @Estado, @MetodoPagoPreferido, @Observaciones)";
+                (@DNI, @CUIL_CUIT, @Apellido, @Nombres, @Calle, @Depto, @Piso, @Ciudad, @Telefono, @Email, @FechaAlta,
+                @EstadoCivil, @Nacionalidad, @Provincia, @CodigoPostal, @Barrio, @TelefonoAlternativo, @Instagram,
+                @ProfesionOcupacion, @EmpresaLugarTrabajo, @NivelEstudios, @Estado, @MetodoPagoPreferido, @Observaciones)";
 
             using (MySqlConnection conexion = new MySqlConnection(_conexionString))
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
 
-                comando.Parameters.AddWithValue("@DNI", dni);
-                comando.Parameters.AddWithValue("@CUIL_CUIT", cuilCuit);
-                comando.Parameters.AddWithValue("@Apellido", apellido);
-                comando.Parameters.AddWithValue("@Nombres", nombres);
-                comando.Parameters.AddWithValue("@Calle", calle);
-                comando.Parameters.AddWithValue("@Depto", depto);
-                comando.Parameters.AddWithValue("@Piso", piso);
-                comando.Parameters.AddWithValue("@Ciudad", ciudad);
-                comando.Parameters.AddWithValue("@Telefono", telefono);
-                comando.Parameters.AddWithValue("@Email", email);
-                comando.Parameters.AddWithValue("@FechaAlta", fechaAlta);
-                comando.Parameters.AddWithValue("@EstadoCivil", estadoCivil);
-                comando.Parameters.AddWithValue("@Nacionalidad", nacionalidad);
-                comando.Parameters.AddWithValue("@Provincia", provincia);
-                comando.Parameters.AddWithValue("@CodigoPostal", codigoPostal);
-                comando.Parameters.AddWithValue("@Barrio", barrio);
-                comando.Parameters.AddWithValue("@TelefonoAlternativo", telefonoAlternativo);
-                comando.Parameters.AddWithValue("@Instagram", instagram);
-                comando.Parameters.AddWithValue("@ProfesionOcupacion", profesionOcupacion);
-                comando.Parameters.AddWithValue("@EmpresaLugarTrabajo", empresaLugarTrabajo);
-                comando.Parameters.AddWithValue("@NivelEstudios", nivelEstudios);
-                comando.Parameters.AddWithValue("@Estado", estado);
-                comando.Parameters.AddWithValue("@MetodoPagoPreferido", metodoPagoPreferido);
-                comando.Parameters.AddWithValue("@Observaciones", observaciones);
+                comando.Parameters.AddWithValue("@DNI", persona.DNI);
+                comando.Parameters.AddWithValue("@CUIL_CUIT", persona.CuilCuit);
+                comando.Parameters.AddWithValue("@Apellido", persona.Apellido);
+                comando.Parameters.AddWithValue("@Nombres", persona.Nombres);
+                comando.Parameters.AddWithValue("@Calle", persona.Calle);
+                comando.Parameters.AddWithValue("@Depto", persona.Depto);
+                comando.Parameters.AddWithValue("@Piso", persona.Piso);
+                comando.Parameters.AddWithValue("@Ciudad", persona.Ciudad);
+                comando.Parameters.AddWithValue("@Telefono", persona.Telefono);
+                comando.Parameters.AddWithValue("@Email", persona.Email);
+                comando.Parameters.AddWithValue("@FechaAlta", persona.FechaAlta);
+                comando.Parameters.AddWithValue("@EstadoCivil", persona.EstadoCivil);
+                comando.Parameters.AddWithValue("@Nacionalidad", persona.Nacionalidad);
+                comando.Parameters.AddWithValue("@Provincia", persona.Provincia);
+                comando.Parameters.AddWithValue("@CodigoPostal", persona.CodigoPostal);
+                comando.Parameters.AddWithValue("@Barrio", persona.Barrio);
+                comando.Parameters.AddWithValue("@TelefonoAlternativo", persona.TelefonoAlternativo);
+                comando.Parameters.AddWithValue("@Instagram", persona.Instagram);
+                comando.Parameters.AddWithValue("@ProfesionOcupacion", persona.ProfesionOcupacion);
+                comando.Parameters.AddWithValue("@EmpresaLugarTrabajo", persona.EmpresaLugarTrabajo);
+                comando.Parameters.AddWithValue("@NivelEstudios", persona.NivelEstudios);
+                comando.Parameters.AddWithValue("@Estado", persona.Estado);
+                comando.Parameters.AddWithValue("@MetodoPagoPreferido", persona.MetodoPagoPreferido);
+                comando.Parameters.AddWithValue("@Observaciones", persona.Observaciones);
 
                 conexion.Open();
 
@@ -211,31 +190,7 @@ namespace Agenda.Datos
         }
 
         // MODIFICAR
-        public bool Modificar(
-            int dni,
-            long cuilCuit,
-            string apellido,
-            string nombres,
-            string calle,
-            string depto,
-            int piso,
-            string ciudad,
-            int telefono,
-            string email,
-            DateTime fechaAlta,
-            string estadoCivil,
-            string nacionalidad,
-            string provincia,
-            int codigoPostal,
-            string barrio,
-            int telefonoAlternativo,
-            string instagram,
-            string profesionOcupacion,
-            string empresaLugarTrabajo,
-            string nivelEstudios,
-            string estado,
-            string metodoPagoPreferido,
-            string observaciones)
+        public bool Modificar(PersonaDatos persona)
         {
             string query = @"UPDATE agenda SET
                 CUIL_CUIT = @CUIL_CUIT,
@@ -267,30 +222,30 @@ namespace Agenda.Datos
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
 
-                comando.Parameters.AddWithValue("@DNI", dni);
-                comando.Parameters.AddWithValue("@CUIL_CUIT", cuilCuit);
-                comando.Parameters.AddWithValue("@Apellido", apellido);
-                comando.Parameters.AddWithValue("@Nombres", nombres);
-                comando.Parameters.AddWithValue("@Calle", calle);
-                comando.Parameters.AddWithValue("@Depto", depto);
-                comando.Parameters.AddWithValue("@Piso", piso);
-                comando.Parameters.AddWithValue("@Ciudad", ciudad);
-                comando.Parameters.AddWithValue("@Telefono", telefono);
-                comando.Parameters.AddWithValue("@Email", email);
-                comando.Parameters.AddWithValue("@FechaAlta", fechaAlta);
-                comando.Parameters.AddWithValue("@EstadoCivil", estadoCivil);
-                comando.Parameters.AddWithValue("@Nacionalidad", nacionalidad);
-                comando.Parameters.AddWithValue("@Provincia", provincia);
-                comando.Parameters.AddWithValue("@CodigoPostal", codigoPostal);
-                comando.Parameters.AddWithValue("@Barrio", barrio);
-                comando.Parameters.AddWithValue("@TelefonoAlternativo", telefonoAlternativo);
-                comando.Parameters.AddWithValue("@Instagram", instagram);
-                comando.Parameters.AddWithValue("@ProfesionOcupacion", profesionOcupacion);
-                comando.Parameters.AddWithValue("@EmpresaLugarTrabajo", empresaLugarTrabajo);
-                comando.Parameters.AddWithValue("@NivelEstudios", nivelEstudios);
-                comando.Parameters.AddWithValue("@Estado", estado);
-                comando.Parameters.AddWithValue("@MetodoPagoPreferido", metodoPagoPreferido);
-                comando.Parameters.AddWithValue("@Observaciones", observaciones);
+                comando.Parameters.AddWithValue("@DNI", persona.DNI);
+                comando.Parameters.AddWithValue("@CUIL_CUIT", persona.CuilCuit);
+                comando.Parameters.AddWithValue("@Apellido", persona.Apellido);
+                comando.Parameters.AddWithValue("@Nombres", persona.Nombres);
+                comando.Parameters.AddWithValue("@Calle", persona.Calle);
+                comando.Parameters.AddWithValue("@Depto", persona.Depto);
+                comando.Parameters.AddWithValue("@Piso", persona.Piso);
+                comando.Parameters.AddWithValue("@Ciudad", persona.Ciudad);
+                comando.Parameters.AddWithValue("@Telefono", persona.Telefono);
+                comando.Parameters.AddWithValue("@Email", persona.Email);
+                comando.Parameters.AddWithValue("@FechaAlta", persona.FechaAlta);
+                comando.Parameters.AddWithValue("@EstadoCivil", persona.EstadoCivil);
+                comando.Parameters.AddWithValue("@Nacionalidad", persona.Nacionalidad);
+                comando.Parameters.AddWithValue("@Provincia", persona.Provincia);
+                comando.Parameters.AddWithValue("@CodigoPostal", persona.CodigoPostal);
+                comando.Parameters.AddWithValue("@Barrio", persona.Barrio);
+                comando.Parameters.AddWithValue("@TelefonoAlternativo", persona.TelefonoAlternativo);
+                comando.Parameters.AddWithValue("@Instagram", persona.Instagram);
+                comando.Parameters.AddWithValue("@ProfesionOcupacion", persona.ProfesionOcupacion);
+                comando.Parameters.AddWithValue("@EmpresaLugarTrabajo", persona.EmpresaLugarTrabajo);
+                comando.Parameters.AddWithValue("@NivelEstudios", persona.NivelEstudios);
+                comando.Parameters.AddWithValue("@Estado", persona.Estado);
+                comando.Parameters.AddWithValue("@MetodoPagoPreferido", persona.MetodoPagoPreferido);
+                comando.Parameters.AddWithValue("@Observaciones", persona.Observaciones);
 
                 conexion.Open();
 
@@ -306,6 +261,7 @@ namespace Agenda.Datos
             using (MySqlConnection conexion = new MySqlConnection(_conexionString))
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
+
                 comando.Parameters.AddWithValue("@DNI", dni);
 
                 conexion.Open();
@@ -314,39 +270,36 @@ namespace Agenda.Datos
             }
         }
 
-        // CREAR TUPLA
-        private (int DNI, long CuilCuit, string Apellido, string Nombres, string Calle, string Depto, int Piso,
-            string Ciudad, int Telefono, string Email, DateTime FechaAlta, string EstadoCivil,
-            string Nacionalidad, string Provincia, int CodigoPostal, string Barrio, int TelefonoAlternativo,
-            string Instagram, string ProfesionOcupacion, string EmpresaLugarTrabajo, string NivelEstudios,
-            string Estado, string MetodoPagoPreferido, string Observaciones) CrearPersona(MySqlDataReader reader)
+        // CREAR OBJETO PERSONA
+        private PersonaDatos CrearPersona(MySqlDataReader reader)
         {
-            return (
-                Convert.ToInt32(reader["DNI"]),
-                Convert.ToInt64(reader["CUIL_CUIT"]),
-                Convert.ToString(reader["Apellido"]),
-                Convert.ToString(reader["Nombres"]),
-                Convert.ToString(reader["Calle"]),
-                Convert.ToString(reader["Depto"]),
-                Convert.ToInt32(reader["Piso"]),
-                Convert.ToString(reader["Ciudad"]),
-                Convert.ToInt32(reader["Telefono"]),
-                Convert.ToString(reader["Email"]),
-                Convert.ToDateTime(reader["FechaAlta"]),
-                Convert.ToString(reader["EstadoCivil"]),
-                Convert.ToString(reader["Nacionalidad"]),
-                Convert.ToString(reader["Provincia"]),
-                Convert.ToInt32(reader["CodigoPostal"]),
-                Convert.ToString(reader["Barrio"]),
-                Convert.ToInt32(reader["TelefonoAlternativo"]),
-                Convert.ToString(reader["Instagram"]),
-                Convert.ToString(reader["ProfesionOcupacion"]),
-                Convert.ToString(reader["EmpresaLugarTrabajo"]),
-                Convert.ToString(reader["NivelEstudios"]),
-                Convert.ToString(reader["Estado"]),
-                Convert.ToString(reader["MetodoPagoPreferido"]),
-                Convert.ToString(reader["Observaciones"])
-            );
+            return new PersonaDatos
+            {
+                DNI = Convert.ToInt32(reader["DNI"]),
+                CuilCuit = Convert.ToInt64(reader["CUIL_CUIT"]),
+                Apellido = Convert.ToString(reader["Apellido"]),
+                Nombres = Convert.ToString(reader["Nombres"]),
+                Calle = Convert.ToString(reader["Calle"]),
+                Depto = Convert.ToString(reader["Depto"]),
+                Piso = Convert.ToInt32(reader["Piso"]),
+                Ciudad = Convert.ToString(reader["Ciudad"]),
+                Telefono = Convert.ToInt32(reader["Telefono"]),
+                Email = Convert.ToString(reader["Email"]),
+                FechaAlta = Convert.ToDateTime(reader["FechaAlta"]),
+                EstadoCivil = Convert.ToString(reader["EstadoCivil"]),
+                Nacionalidad = Convert.ToString(reader["Nacionalidad"]),
+                Provincia = Convert.ToString(reader["Provincia"]),
+                CodigoPostal = Convert.ToInt32(reader["CodigoPostal"]),
+                Barrio = Convert.ToString(reader["Barrio"]),
+                TelefonoAlternativo = Convert.ToInt32(reader["TelefonoAlternativo"]),
+                Instagram = Convert.ToString(reader["Instagram"]),
+                ProfesionOcupacion = Convert.ToString(reader["ProfesionOcupacion"]),
+                EmpresaLugarTrabajo = Convert.ToString(reader["EmpresaLugarTrabajo"]),
+                NivelEstudios = Convert.ToString(reader["NivelEstudios"]),
+                Estado = Convert.ToString(reader["Estado"]),
+                MetodoPagoPreferido = Convert.ToString(reader["MetodoPagoPreferido"]),
+                Observaciones = Convert.ToString(reader["Observaciones"])
+            };
         }
     }
 }

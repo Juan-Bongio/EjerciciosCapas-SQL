@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Agenda.Datos;
+using static Agenda.Datos.AgendaDatos;
 
 namespace Agenda.Negocio
 {
@@ -32,6 +33,7 @@ namespace Agenda.Negocio
         public string Observaciones { get; set; }
     }
 
+
     public class AgendaNegocio
     {
         private AgendaDatos _datos = new AgendaDatos();
@@ -42,12 +44,12 @@ namespace Agenda.Negocio
             if (dni <= 0)
                 return null;
 
-            var resultado = _datos.BuscarPorDni(dni);
+            PersonaDatos resultado = _datos.BuscarPorDni(dni);
 
             if (resultado == null)
                 return null;
 
-            return ConvertirPersona(resultado.Value);
+            return ConvertirPersona(resultado);
         }
 
         // BUSCAR POR APELLIDO
@@ -58,9 +60,9 @@ namespace Agenda.Negocio
             if (string.IsNullOrWhiteSpace(apellido))
                 return personas;
 
-            var resultados = _datos.BuscarPorApellido(apellido);
+            List<PersonaDatos> resultados = _datos.BuscarPorApellido(apellido);
 
-            foreach (var resultado in resultados)
+            foreach (PersonaDatos resultado in resultados)
             {
                 personas.Add(ConvertirPersona(resultado));
             }
@@ -76,9 +78,9 @@ namespace Agenda.Negocio
             if (string.IsNullOrWhiteSpace(nombres))
                 return personas;
 
-            var resultados = _datos.BuscarPorNombres(nombres);
+            List<PersonaDatos> resultados = _datos.BuscarPorNombres(nombres);
 
-            foreach (var resultado in resultados)
+            foreach (PersonaDatos resultado in resultados)
             {
                 personas.Add(ConvertirPersona(resultado));
             }
@@ -94,9 +96,9 @@ namespace Agenda.Negocio
             if (string.IsNullOrWhiteSpace(calle))
                 return personas;
 
-            var resultados = _datos.BuscarPorCalle(calle);
+            List<PersonaDatos> resultados = _datos.BuscarPorCalle(calle);
 
-            foreach (var resultado in resultados)
+            foreach (PersonaDatos resultado in resultados)
             {
                 personas.Add(ConvertirPersona(resultado));
             }
@@ -113,32 +115,9 @@ namespace Agenda.Negocio
             if (_datos.BuscarPorDni(persona.DNI) != null)
                 return false;
 
-            return _datos.Agregar(
-                persona.DNI,
-                persona.CuilCuit,
-                persona.Apellido,
-                persona.Nombres,
-                persona.Calle,
-                persona.Depto,
-                persona.Piso,
-                persona.Ciudad,
-                persona.Telefono,
-                persona.Email,
-                persona.FechaAlta,
-                persona.EstadoCivil,
-                persona.Nacionalidad,
-                persona.Provincia,
-                persona.CodigoPostal,
-                persona.Barrio,
-                persona.TelefonoAlternativo,
-                persona.Instagram,
-                persona.ProfesionOcupacion,
-                persona.EmpresaLugarTrabajo,
-                persona.NivelEstudios,
-                persona.Estado,
-                persona.MetodoPagoPreferido,
-                persona.Observaciones
-            );
+            PersonaDatos personaDatos = ConvertirDatos(persona);
+
+            return _datos.Agregar(personaDatos);
         }
 
         // MODIFICAR
@@ -150,32 +129,9 @@ namespace Agenda.Negocio
             if (_datos.BuscarPorDni(persona.DNI) == null)
                 return false;
 
-            return _datos.Modificar(
-                persona.DNI,
-                persona.CuilCuit,
-                persona.Apellido,
-                persona.Nombres,
-                persona.Calle,
-                persona.Depto,
-                persona.Piso,
-                persona.Ciudad,
-                persona.Telefono,
-                persona.Email,
-                persona.FechaAlta,
-                persona.EstadoCivil,
-                persona.Nacionalidad,
-                persona.Provincia,
-                persona.CodigoPostal,
-                persona.Barrio,
-                persona.TelefonoAlternativo,
-                persona.Instagram,
-                persona.ProfesionOcupacion,
-                persona.EmpresaLugarTrabajo,
-                persona.NivelEstudios,
-                persona.Estado,
-                persona.MetodoPagoPreferido,
-                persona.Observaciones
-            );
+            PersonaDatos personaDatos = ConvertirDatos(persona);
+
+            return _datos.Modificar(personaDatos);
         }
 
         // ELIMINAR
@@ -187,7 +143,7 @@ namespace Agenda.Negocio
             return _datos.Eliminar(dni);
         }
 
-        // VALIDAR
+        // VALIDAR PERSONA
         private bool ValidarPersona(Persona persona)
         {
             if (persona == null)
@@ -229,40 +185,67 @@ namespace Agenda.Negocio
             return true;
         }
 
-        // CONVERTIR RESULTADO A PERSONA
-        private Persona ConvertirPersona(
-            (int DNI, long CuilCuit, string Apellido, string Nombres, string Calle, string Depto, int Piso,
-            string Ciudad, int Telefono, string Email, DateTime FechaAlta, string EstadoCivil,
-            string Nacionalidad, string Provincia, int CodigoPostal, string Barrio, int TelefonoAlternativo,
-            string Instagram, string ProfesionOcupacion, string EmpresaLugarTrabajo, string NivelEstudios,
-            string Estado, string MetodoPagoPreferido, string Observaciones) resultado)
+        // PERSONA A SQL
+        private PersonaDatos ConvertirDatos(Persona persona)
+        {
+            return new PersonaDatos
+            {
+                DNI = persona.DNI,
+                CuilCuit = persona.CuilCuit,
+                Apellido = persona.Apellido,
+                Nombres = persona.Nombres,
+                Calle = persona.Calle,
+                Depto = persona.Depto,
+                Piso = persona.Piso,
+                Ciudad = persona.Ciudad,
+                Telefono = persona.Telefono,
+                Email = persona.Email,
+                FechaAlta = persona.FechaAlta,
+                EstadoCivil = persona.EstadoCivil,
+                Nacionalidad = persona.Nacionalidad,
+                Provincia = persona.Provincia,
+                CodigoPostal = persona.CodigoPostal,
+                Barrio = persona.Barrio,
+                TelefonoAlternativo = persona.TelefonoAlternativo,
+                Instagram = persona.Instagram,
+                ProfesionOcupacion = persona.ProfesionOcupacion,
+                EmpresaLugarTrabajo = persona.EmpresaLugarTrabajo,
+                NivelEstudios = persona.NivelEstudios,
+                Estado = persona.Estado,
+                MetodoPagoPreferido = persona.MetodoPagoPreferido,
+                Observaciones = persona.Observaciones
+            };
+        }
+
+        // SQL A PERSONA
+        private Persona ConvertirPersona(PersonaDatos persona)
         {
             return new Persona
             {
-                DNI = resultado.DNI,
-                CuilCuit = resultado.CuilCuit,
-                Apellido = resultado.Apellido,
-                Nombres = resultado.Nombres,
-                Calle = resultado.Calle,
-                Depto = resultado.Depto,
-                Piso = resultado.Piso,
-                Ciudad = resultado.Ciudad,
-                Telefono = resultado.Telefono,
-                Email = resultado.Email,
-                FechaAlta = resultado.FechaAlta,
-                EstadoCivil = resultado.EstadoCivil,
-                Nacionalidad = resultado.Nacionalidad,
-                Provincia = resultado.Provincia,
-                CodigoPostal = resultado.CodigoPostal,
-                Barrio = resultado.Barrio,
-                TelefonoAlternativo = resultado.TelefonoAlternativo,
-                Instagram = resultado.Instagram,
-                ProfesionOcupacion = resultado.ProfesionOcupacion,
-                EmpresaLugarTrabajo = resultado.EmpresaLugarTrabajo,
-                NivelEstudios = resultado.NivelEstudios,
-                Estado = resultado.Estado,
-                MetodoPagoPreferido = resultado.MetodoPagoPreferido,
-                Observaciones = resultado.Observaciones
+                DNI = persona.DNI,
+                CuilCuit = persona.CuilCuit,
+                Apellido = persona.Apellido,
+                Nombres = persona.Nombres,
+                Calle = persona.Calle,
+                Depto = persona.Depto,
+                Piso = persona.Piso,
+                Ciudad = persona.Ciudad,
+                Telefono = persona.Telefono,
+                Email = persona.Email,
+                FechaAlta = persona.FechaAlta,
+                EstadoCivil = persona.EstadoCivil,
+                Nacionalidad = persona.Nacionalidad,
+                Provincia = persona.Provincia,
+                CodigoPostal = persona.CodigoPostal,
+                Barrio = persona.Barrio,
+                TelefonoAlternativo = persona.TelefonoAlternativo,
+                Instagram = persona.Instagram,
+                ProfesionOcupacion = persona.ProfesionOcupacion,
+                EmpresaLugarTrabajo = persona.EmpresaLugarTrabajo,
+                NivelEstudios = persona.NivelEstudios,
+                Estado = persona.Estado,
+                MetodoPagoPreferido = persona.MetodoPagoPreferido,
+                Observaciones = persona.Observaciones
             };
         }
     }

@@ -1,5 +1,5 @@
 <Solution>
   <Project Path="Agenda.Datos/Agenda.Datos.csproj" />
   <Project Path="Agenda.Negocio/Agenda.Negocio.csproj" />
-  <Project Path="Agenda.Presentacion/Agenda.Presentacion.csproj" />
+  <Project Path="Agenda/Agenda.Presentacion.csproj" />
 </Solution>
