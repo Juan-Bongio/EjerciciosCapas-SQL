@@ -1,0 +1,12 @@
+C:\Users\PC-1\source\repos\AgendaCuentaCte\AgendaCuentaCte.Datos\obj\Debug\net8.0\AgendaCuentaCte.Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC-1\source\repos\AgendaCuentaCte\AgendaCuentaCte.Datos\obj\Debug\net8.0\AgendaCuentaCte.Datos.AssemblyInfoInputs.cache
+C:\Users\PC-1\source\repos\AgendaCuentaCte\AgendaCuentaCte.Datos\obj\Debug\net8.0\AgendaCuentaCte.Datos.AssemblyInfo.cs
+C:\Users\PC-1\source\repos\AgendaCuentaCte\AgendaCuentaCte.Datos\obj\Debug\net8.0\AgendaCuentaCte.Datos.csproj.CoreCompileInputs.cache
+C:\Users\PC-1\source\repos\AgendaCuentaCte\AgendaCuentaCte.Datos\bin\Debug\net8.0\AgendaCuentaCte.Datos.deps.json
+C:\Users\PC-1\source\repos\AgendaCuentaCte\AgendaCuentaCte.Datos\bin\Debug\net8.0\AgendaCuentaCte.Datos.dll
+C:\Users\PC-1\source\repos\AgendaCuentaCte\AgendaCuentaCte.Datos\bin\Debug\net8.0\AgendaCuentaCte.Datos.pdb
+C:\Users\PC-1\source\repos\AgendaCuentaCte\AgendaCuentaCte.Datos\obj\Debug\net8.0\AgendaCuentaCte.Datos.csproj.AssemblyReference.cache
+C:\Users\PC-1\source\repos\AgendaCuentaCte\AgendaCuentaCte.Datos\obj\Debug\net8.0\AgendaCuentaCte.Datos.dll
+C:\Users\PC-1\source\repos\AgendaCuentaCte\AgendaCuentaCte.Datos\obj\Debug\net8.0\refint\AgendaCuentaCte.Datos.dll
+C:\Users\PC-1\source\repos\AgendaCuentaCte\AgendaCuentaCte.Datos\obj\Debug\net8.0\AgendaCuentaCte.Datos.pdb
+C:\Users\PC-1\source\repos\AgendaCuentaCte\AgendaCuentaCte.Datos\obj\Debug\net8.0\ref\AgendaCuentaCte.Datos.dll

@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC-1\\Desktop\\AgendaCuentaCte\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD473BD6-AB8E-40DC-9F85-E9F29FA7202C}|AgendaCuentaCte.Datos\\AgendaCuentaCte.Datos.csproj|c:\\users\\pc-1\\desktop\\agendacuentacte\\agendacuentacte.datos\\cuentacte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD473BD6-AB8E-40DC-9F85-E9F29FA7202C}|AgendaCuentaCte.Datos\\AgendaCuentaCte.Datos.csproj|solutionrelative:agendacuentacte.datos\\cuentacte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD473BD6-AB8E-40DC-9F85-E9F29FA7202C}|AgendaCuentaCte.Datos\\AgendaCuentaCte.Datos.csproj|c:\\users\\pc-1\\desktop\\agendacuentacte\\agendacuentacte.datos\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD473BD6-AB8E-40DC-9F85-E9F29FA7202C}|AgendaCuentaCte.Datos\\AgendaCuentaCte.Datos.csproj|solutionrelative:agendacuentacte.datos\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A9E5EAC-F006-4835-9B93-D6B84C4686F6}|AgendaCuentaCte\\AgendaCuentaCte.Presentacion.csproj|c:\\users\\pc-1\\desktop\\agendacuentacte\\agendacuentacte\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A9E5EAC-F006-4835-9B93-D6B84C4686F6}|AgendaCuentaCte\\AgendaCuentaCte.Presentacion.csproj|solutionrelative:agendacuentacte\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F172351D-EB43-44E4-B523-9CD73056CE16}|AgendaCuentaCte.Negocio\\AgendaCuentaCte.Negocio.csproj|c:\\users\\pc-1\\desktop\\agendacuentacte\\agendacuentacte.negocio\\negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F172351D-EB43-44E4-B523-9CD73056CE16}|AgendaCuentaCte.Negocio\\AgendaCuentaCte.Negocio.csproj|solutionrelative:agendacuentacte.negocio\\negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CuentaCte.cs",
+              "DocumentMoniker": "C:\\Users\\PC-1\\Desktop\\AgendaCuentaCte\\AgendaCuentaCte.Datos\\CuentaCte.cs",
+              "RelativeDocumentMoniker": "AgendaCuentaCte.Datos\\CuentaCte.cs",
+              "ToolTip": "C:\\Users\\PC-1\\Desktop\\AgendaCuentaCte\\AgendaCuentaCte.Datos\\CuentaCte.cs",
+              "RelativeToolTip": "AgendaCuentaCte.Datos\\CuentaCte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T23:59:29.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC-1\\Desktop\\AgendaCuentaCte\\AgendaCuentaCte\\Program.cs",
+              "RelativeDocumentMoniker": "AgendaCuentaCte\\Program.cs",
+              "ToolTip": "C:\\Users\\PC-1\\Desktop\\AgendaCuentaCte\\AgendaCuentaCte\\Program.cs",
+              "RelativeToolTip": "AgendaCuentaCte\\Program.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAwwJEBAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T23:31:41.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Negocio.cs",
+              "DocumentMoniker": "C:\\Users\\PC-1\\Desktop\\AgendaCuentaCte\\AgendaCuentaCte.Negocio\\Negocio.cs",
+              "RelativeDocumentMoniker": "AgendaCuentaCte.Negocio\\Negocio.cs",
+              "ToolTip": "C:\\Users\\PC-1\\Desktop\\AgendaCuentaCte\\AgendaCuentaCte.Negocio\\Negocio.cs",
+              "RelativeToolTip": "AgendaCuentaCte.Negocio\\Negocio.cs",
+              "ViewState": "AgIAABoBAAAAAAAAAAAwwBkBAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T23:21:41.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Datos.cs",
+              "DocumentMoniker": "C:\\Users\\PC-1\\Desktop\\AgendaCuentaCte\\AgendaCuentaCte.Datos\\Datos.cs",
+              "RelativeDocumentMoniker": "AgendaCuentaCte.Datos\\Datos.cs",
+              "ToolTip": "C:\\Users\\PC-1\\Desktop\\AgendaCuentaCte\\AgendaCuentaCte.Datos\\Datos.cs",
+              "RelativeToolTip": "AgendaCuentaCte.Datos\\Datos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T23:17:15.876Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
