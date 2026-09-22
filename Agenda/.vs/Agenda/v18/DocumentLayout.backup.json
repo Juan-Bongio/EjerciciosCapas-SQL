@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A39E50D0-5925-4660-BCAB-D2D1F49A3E8B}|Agenda.Datos\\Agenda.Datos.csproj|c:\\users\\usuario\\onedrive\\desktop\\base de datos - obregon\\agenda\\agenda.datos\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A39E50D0-5925-4660-BCAB-D2D1F49A3E8B}|Agenda.Datos\\Agenda.Datos.csproj|solutionrelative:agenda.datos\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32921D00-1373-456E-94FD-2CA9F1C45BED}|Agenda.Negocio\\Agenda.Negocio.csproj|c:\\users\\usuario\\onedrive\\desktop\\base de datos - obregon\\agenda\\agenda.negocio\\negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32921D00-1373-456E-94FD-2CA9F1C45BED}|Agenda.Negocio\\Agenda.Negocio.csproj|solutionrelative:agenda.negocio\\negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31D00202-0D6D-4839-B3C9-07EE6D8CAB73}|Agenda.Presentacion\\Agenda.Presentacion.csproj|c:\\users\\usuario\\onedrive\\desktop\\base de datos - obregon\\agenda\\agenda.presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31D00202-0D6D-4839-B3C9-07EE6D8CAB73}|Agenda.Presentacion\\Agenda.Presentacion.csproj|solutionrelative:agenda.presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Presentacion\\Program.cs",
+              "RelativeDocumentMoniker": "Agenda.Presentacion\\Program.cs",
+              "ToolTip": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Presentacion\\Program.cs",
+              "RelativeToolTip": "Agenda.Presentacion\\Program.cs",
+              "ViewState": "AgIAAD0BAAAAAAAAAADwv1MBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T00:16:51.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Negocio.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Negocio\\Negocio.cs",
+              "RelativeDocumentMoniker": "Agenda.Negocio\\Negocio.cs",
+              "ToolTip": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Negocio\\Negocio.cs",
+              "RelativeToolTip": "Agenda.Negocio\\Negocio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T00:16:37.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Datos.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Datos\\Datos.cs",
+              "RelativeDocumentMoniker": "Agenda.Datos\\Datos.cs",
+              "ToolTip": "C:\\Users\\usuario\\OneDrive\\Desktop\\Base de Datos - Obregon\\Agenda\\Agenda.Datos\\Datos.cs",
+              "RelativeToolTip": "Agenda.Datos\\Datos.cs",
+              "ViewState": "AgIAABoAAAAAYeC592gawCQAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T00:16:26.198Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
