@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\usuario\\OneDrive\\Desktop\\EjercicioDNI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5909F21F-77FC-48F3-9367-2AF9DC91F357}|EjercicioDNI.Negocio\\EjercicioDNI.Negocio.csproj|c:\\users\\usuario\\onedrive\\desktop\\ejerciciodni\\ejerciciodni.negocio\\negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5909F21F-77FC-48F3-9367-2AF9DC91F357}|EjercicioDNI.Negocio\\EjercicioDNI.Negocio.csproj|solutionrelative:ejerciciodni.negocio\\negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{284571F7-110A-4B9D-BDDF-959C26C67D13}|EjercicioDNI\\EjercicioDNI.Datos.csproj|c:\\users\\usuario\\onedrive\\desktop\\ejerciciodni\\ejerciciodni\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{284571F7-110A-4B9D-BDDF-959C26C67D13}|EjercicioDNI\\EjercicioDNI.Datos.csproj|solutionrelative:ejerciciodni\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD5EAAB-7F68-449C-9316-43DD04A34780}|EjercicioDNI.Presentacion\\EjercicioDNI.Presentacion.csproj|c:\\users\\usuario\\onedrive\\desktop\\ejerciciodni\\ejerciciodni.presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD5EAAB-7F68-449C-9316-43DD04A34780}|EjercicioDNI.Presentacion\\EjercicioDNI.Presentacion.csproj|solutionrelative:ejerciciodni.presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\OneDrive\\Desktop\\EjercicioDNI\\EjercicioDNI.Presentacion\\Program.cs",
+              "RelativeDocumentMoniker": "EjercicioDNI.Presentacion\\Program.cs",
+              "ToolTip": "C:\\Users\\usuario\\OneDrive\\Desktop\\EjercicioDNI\\EjercicioDNI.Presentacion\\Program.cs",
+              "RelativeToolTip": "EjercicioDNI.Presentacion\\Program.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAgwHYAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T21:32:16.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Negocio.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\OneDrive\\Desktop\\EjercicioDNI\\EjercicioDNI.Negocio\\Negocio.cs",
+              "RelativeDocumentMoniker": "EjercicioDNI.Negocio\\Negocio.cs",
+              "ToolTip": "C:\\Users\\usuario\\OneDrive\\Desktop\\EjercicioDNI\\EjercicioDNI.Negocio\\Negocio.cs",
+              "RelativeToolTip": "EjercicioDNI.Negocio\\Negocio.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T21:31:39.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Datos.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\OneDrive\\Desktop\\EjercicioDNI\\EjercicioDNI\\Datos.cs",
+              "RelativeDocumentMoniker": "EjercicioDNI\\Datos.cs",
+              "ToolTip": "C:\\Users\\usuario\\OneDrive\\Desktop\\EjercicioDNI\\EjercicioDNI\\Datos.cs",
+              "RelativeToolTip": "EjercicioDNI\\Datos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T21:30:52.066Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

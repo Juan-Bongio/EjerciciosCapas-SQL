@@ -1,0 +1,15 @@
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\obj\Debug\net8.0\EjercicioDNI.Negocio.csproj.AssemblyReference.cache
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\obj\Debug\net8.0\EjercicioDNI.Negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\obj\Debug\net8.0\EjercicioDNI.Negocio.AssemblyInfoInputs.cache
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\obj\Debug\net8.0\EjercicioDNI.Negocio.AssemblyInfo.cs
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\obj\Debug\net8.0\EjercicioDNI.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\bin\Debug\net8.0\EjercicioDNI.Negocio.deps.json
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\bin\Debug\net8.0\EjercicioDNI.Negocio.dll
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\bin\Debug\net8.0\EjercicioDNI.Negocio.pdb
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\bin\Debug\net8.0\EjercicioDNI.Datos.dll
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\bin\Debug\net8.0\EjercicioDNI.Datos.pdb
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\obj\Debug\net8.0\Ejercici.5904056A.Up2Date
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\obj\Debug\net8.0\EjercicioDNI.Negocio.dll
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\obj\Debug\net8.0\refint\EjercicioDNI.Negocio.dll
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\obj\Debug\net8.0\EjercicioDNI.Negocio.pdb
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI.Negocio\obj\Debug\net8.0\ref\EjercicioDNI.Negocio.dll

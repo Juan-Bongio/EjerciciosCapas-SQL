@@ -1,0 +1,13 @@
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI\bin\Debug\net8.0\EjercicioDNI.Datos.deps.json
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI\bin\Debug\net8.0\EjercicioDNI.Datos.dll
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI\bin\Debug\net8.0\EjercicioDNI.Datos.pdb
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI\obj\Debug\net8.0\EjercicioDNI.Datos.csproj.AssemblyReference.cache
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI\obj\Debug\net8.0\EjercicioDNI.Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI\obj\Debug\net8.0\EjercicioDNI.Datos.AssemblyInfoInputs.cache
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI\obj\Debug\net8.0\EjercicioDNI.Datos.AssemblyInfo.cs
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI\obj\Debug\net8.0\EjercicioDNI.Datos.csproj.CoreCompileInputs.cache
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI\obj\Debug\net8.0\EjercicioDNI.Datos.dll
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI\obj\Debug\net8.0\refint\EjercicioDNI.Datos.dll
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI\obj\Debug\net8.0\EjercicioDNI.Datos.pdb
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI\obj\Debug\net8.0\ref\EjercicioDNI.Datos.dll
+C:\Users\usuario\OneDrive\Desktop\EjercicioDNI\EjercicioDNI\obj\Debug\net8.0\Ejercici.F5D624F7.Up2Date

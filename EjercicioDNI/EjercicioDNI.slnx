@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="EjercicioDNI.Negocio/EjercicioDNI.Negocio.csproj" />
+  <Project Path="EjercicioDNI.Presentacion/EjercicioDNI.Presentacion.csproj" />
+  <Project Path="EjercicioDNI/EjercicioDNI.Datos.csproj" />
+</Solution>
